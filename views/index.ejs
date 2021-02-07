@@ -1,110 +1,25 @@
-<!doctype html>
-<html lang="en">
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>
-    <%= title %>
-  </title>
+<% if (title=="Home" ) { %>  
+<%- include partials/home.ejs %>
+<% } %>
 
-  <!-- CSS Section-->
-  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
-  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+<% if (title=="About" ) { %>  
+<%- include partials/about.ejs %>
+<% } %>
 
-<body>
-  <!-- MenuBar Section-->
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #9bd4fd;">
-    <div class="container-fluid">
-      <a class="navbar-brand mr-auto" href="#">
-        <img src="/Content/images/vs.png" alt="" width="40" height="40" class="d-inline-block align-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<% if (title=="Project" ) { %>  
+<%- include partials/project.ejs %>
+<% } %>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <%if (title=="Home" ) { %>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/home"><i class="fas fa-lg fa-home"></i> Home</a>
-            </li>
-            <% } else{ %>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/home"><i class="fas fa-lg fa-home"></i> Home</a>
-              </li>
-              <% } %>
+<% if (title=="Service" ) { %> 
+<%- include partials/service.ejs %> 
+<% } %>
 
-                <%if (title=="About" ) { %>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/about"> <i class="fas fa-lg fa-info-circle"></i> About</a>
-                  </li>
-                  <% } else{ %>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/about"> <i class="fas fa-lg fa-info-circle"></i> About</a>
-                    </li>
-                    <% } %>
-                      <%if (title=="Projects" ) { %>
-                        <li class="nav-item active">
-                          <a class="nav-link" href="/projects"> <i class="fas fa-lg fa-th-large"></i> Projects</a>
-                        </li>
-                        <% } else{ %>
-                          <li class="nav-item">
-                            <a class="nav-link" href="/projects"> <i class="fas fa-lg fa-th-large"></i> Projects</a>
-                          </li>
-                          <% } %>
-                            <%if (title=="Services" ) { %>
-                              <li class="nav-item active">
-                                <a class="nav-link" href="/services"><i class="fas fa-lg fa-cogs"></i> Services</a>
-                              </li>
-                              <% } else{ %>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="/services"><i class="fas fa-lg fa-cogs"></i> Services</a>
-                                </li>
-                                <% } %>
-                                  <%if (title=="Contact" ) { %>
-                                    <li class="nav-item active">
-                                      <a class="nav-link" href="/contact"><i class="fas fa-lg fa-mobile-alt"></i>
-                                        Contact</a>
-                                    </li>
-                                    <% } else{ %>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="/contact"><i class="fas fa-lg fa-mobile-alt"></i>
-                                          Contact</a>
-                                      </li>
-                                      <% } %>
-      </div>
-    </div>
-  </nav>
+<% if (title=="Contact" ) { %>  
+<%- include partials/contact.ejs %>
+<% } %>
 
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to <%= title %> page
-      </h1>
-    </div>
-  </div>
-
-  <!-- footer Section-->
-  <footer>
-    <nav class="navbar fixed-bottom navbar-dark bg-dark">
-      <div class="container-fluid">
-        <h6 class="display-6 navbar-text">
-          &copy; 2021 All Rights Reserved.
-        </h6>
-      </div>
-    </nav>
-  </footer>
-  <!-- Script Section-->
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+  <%- include partials/bottom_nav.ejs %>
+  <%- include partials/header.ejs %>

@@ -1,2 +1,30 @@
 /* Custom CSS */
+.site-main{
+background: url('/Content/images/background.jpg') no-repeat 0% 50%;
+}
 
+.site-main .site-banner .site-title h3{
+    padding-top: 20%;
+    font-weight: 500;
+}
+.site-main .site-banner .site-title h3::after{
+    content: " "; 
+    height: 2px;
+    width: 18vw;
+    background-color: black;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5 rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5 rem;
+}
+
+.site-main .site-banner .banner-image img{
+    padding-top: 5rem;
+    width: 90rem;
+}
