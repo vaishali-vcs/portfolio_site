@@ -25,6 +25,23 @@ background: url('/Content/images/background.jpg') no-repeat 0% 50%;
 }
 
 .site-main .site-banner .banner-image img{
-    padding-top: 5rem;
+    padding-top: 2rem;
     width: 90rem;
+    
 }
+
+.site-main .about-area{
+    padding: 5rem, 0rem;
+}
+.site-main .about-area .about-image img{
+    padding: 3%;
+}
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/60px;
+    letter-spacing: 10px; 
+}
+
+.site-main .about-area ul#menu li {
+    display:inline;
+  }
