@@ -7,27 +7,31 @@
         <div class="paragraph">
             <p>If you wanna get in touch, talk to me about a project or just say hi,
                 fill up the below form and let's talk.</p>
+            
+            <% if (sender.length > 0 ) { %>
+            <p style = "color: green">Thank you <%= sender %> ! Your message has been successfully sent. I will contact you very soon!</p>
+            <% } %>
         </div>
         <div class="container">
-            <form class="form">
+            <form class="form" action="/Contact" method="post" autocomplete="off">
                 <div class="col-7 formrow">
-                    <input type="text" placeholder="Name" class="form-control" id="inputname" required />
+                    <input type="text" placeholder="Name" class="form-control" name="inputname" required />
 
                 </div>
                 <div class="col-7 formrow">
 
-                    <input type="email" placeholder="Email address" class="form-control" id="inputemail"
+                    <input type="email" placeholder="Email address" class="form-control" name="inputemail"
                         aria-describedby="emailHelp" required />
 
                 </div>
                 <div class="col-7 formrow">
 
-                    <input type="text" placeholder="Subject" class="form-control" id="inputsubject" required />
+                    <input type="text" placeholder="Subject" class="form-control" name="inputsubject" required />
 
                 </div>
                 <div class="col-7 formrow">
 
-                    <textarea placeholder="Message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    <textarea placeholder="Message" class="form-control" name="inputmessage" rows="3"
                         required></textarea>
 
                 </div>

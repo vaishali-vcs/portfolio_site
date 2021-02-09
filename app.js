@@ -3,6 +3,7 @@ let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
+let bodyParser = require("body-parser");
 let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
@@ -19,7 +20,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
+app.use(bodyParser.json());
 app.use('/', indexRouter);
 
 
