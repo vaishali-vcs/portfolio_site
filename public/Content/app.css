@@ -1,6 +1,16 @@
+
+html{
+    height: 100%
+}
+.footer {
+    flex-shrink: 0;
+  }
+
 /* Custom CSS */
 .site-main{
-background: url('/Content/images/background.jpg') repeat;
+/* background: url('/Content/images/background.jpg') repeat; */
+background-color:powderblue;
+min-height: 100%;
 }
 
 .site-main .site-banner .site-title h3{
@@ -50,26 +60,29 @@ background: url('/Content/images/background.jpg') repeat;
     display:inline;
   }
 
-  .footer-row{
-    width:auto;
-    padding-left: 25px;
-    margin-left:-0.9375em;
-    margin-right:-0.9375em;
-    margin-top:0;
-    margin-bottom:0;
-    max-width:none
-  }
 
+  .site-main .project-area  h2 > span{
+    display: block;
+    font: normal bold 49px/60px;
+    letter-spacing: 10px; 
+}
 
   .site-main .project-area .grid .our-project > .title h4{
       font: normal 700 25px/12px;
   }
 
-  .site-main .project-area .title-h1{
+
+.site-main .project-area  h2 > span{
     display: block;
     font: normal bold 49px/60px;
-    letter-spacing: 5px; 
-    
+    letter-spacing: 10px; 
+}
+
+
+.site-main .contact-area  h2 > span{
+    display: block;
+    font: normal bold 49px/60px;
+    letter-spacing: 10px; 
 }
 
   .site-main .contact-area .form .formrow{
