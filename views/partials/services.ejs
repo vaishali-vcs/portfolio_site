@@ -1,1 +1,69 @@
-    <h1>in Services</h1>  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<section class="services-area">
+    <div class="container">
+        <h2 class="text-uppercase pt-5">
+            <span>My Services</span>
+        </h2>
+        <div class="row">
+            <div class="container">
+                <div id="carouselservices" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselservices" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselservices" data-slide-to="1"></li>
+                        <li data-target="#carouselservices" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: 200px !important">
+                            <img class="d-block " src="Content/images/thesis.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item" style="height: 200px !important">
+                            <img class="d-block " src="Content/images/resume.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item" style="height: 200px !important">
+                            <img class="d-block " src="Content/images/french.jpg" alt="Third slide">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#carouselservices" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselservices" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <div class="servicedescription">
+                    <ul class="list-group" style="padding-left: 30pt;">
+                        <li class="list-group-item bg-transparent" style="border: none;">
+                            <i class="fa-li fa fa-plus"></i>
+                            I craft resumes specifically for the Software Engineering job market.
+                            I have experience writing cover letters and resumes.
+                        </li>
+                        <li class="list-group-item bg-transparent" style="border: none;">
+                            <i class="fa-li fa fa-plus"></i>I offer French tutoring all across the
+                            Greater Toronto Area, to youth or adults at all levels and
+                            can prepare them for langauge exams.
+                        </li>
+                        <li class="list-group-item bg-transparent" style="border: none;">
+                            <i class="fa-li fa fa-plus"></i>I can help to Proofread Thesis·
+                            I review the style for thesis and make sure you didn't miss any key
+                            elements you must include.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
