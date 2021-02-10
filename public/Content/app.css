@@ -2,15 +2,18 @@
 html{
     height: 100%
 }
-.footer {
-    flex-shrink: 0;
-  }
 
 /* Custom CSS */
 .site-main{
 /* background: url('/Content/images/background.jpg') repeat; */
 background-color:powderblue;
 min-height: 100%;
+font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.title{
+letter-spacing: 10px; 
+
 }
 
 .site-main .site-banner .site-title h3{
@@ -95,22 +98,17 @@ min-height: 100%;
 }
 
 #carouselservices {
-    background-color: gainsboro;
-    height: 220px !important;
-    width: 25%;
-    padding-left: 20px;
-    padding-top: 20px;
+    background-color: transparent;
+    height: 500px !important;
+    width: 360;
     align-content: center;
     display: flex;
     position: sticky;
     float: left;
     }
-
- .servicedescription{
-    background-color: gainsboro; 
-    min-height: 220px; 
-    width: 90%;
-    vertical-align: middle;
- }
+.carousel-inner > .item > img {
+        width:600px;
+        height:360px;
+      }
 
  
