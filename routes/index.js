@@ -54,15 +54,8 @@ router.get('/contact', function(req, res, next) {
 });
 
 router.post('/contact', function(req, res, next) {
-  let content = req.body.inputname + '\t' +req.body.inputemail +  '\t' +
-  req.body.inputsubject + '\t' + req.body.inputmessage;
- 
-  fs.writeFile('inbox.txt', content, function (err) {
-    if (err) return console.log(err);
-    console.log('Error! > inbox.txt');
   
-  });
-  res.render('home', { title: 'Home' });
+  res.render('index', { title: 'Home' });
 });
 
 
