@@ -50,12 +50,13 @@ router.get('/services', function(req, res, next) {
 
 /* GET Contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact' });
+  res.render('index', { title: 'Contact', ack_message: '' });
 });
 
 router.post('/contact', function(req, res, next) {
-  
-  res.render('index', { title: 'Home' });
+  console.log(req.body.name);
+
+  res.render('index', { title: 'Contact', ack_message: 'true' });
 });
 
 
