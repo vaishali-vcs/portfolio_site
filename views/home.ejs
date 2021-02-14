@@ -1,4 +1,18 @@
-<!--This partial holds Default or Home content-->
+<!--This partial holds Default or Home content
+File Name: home.ejs 
+Name: Vaishali Siddeshwar
+Student ID: 301172372
+Date: Feb-10-2021
+-->
+
+ <!-- render a fixed header content. This has 
+non-UI elements. This contains only <head> tags
+--> 
+<%- include partials/header.ejs %>
+
+ <!-- render a fixed navigation content for all HTTP requests.--> 
+<%- include partials/main_nav.ejs %>
+
 <section>
   <div class="container" style="align-content: center;">
     <div class="jumbotron" style="background-color: transparent;" >
@@ -20,3 +34,9 @@
         </div>
       </div>
 </section>
+
+<!-- render a copyright content for all requests.--> 
+<%- include partials/bottom_nav.ejs %>
+
+<!-- This contains non-UI elements. But closing of body and html tags.--> 
+<%- include partials/header.ejs %>
