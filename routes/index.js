@@ -8,7 +8,6 @@ This module handles all the HTTPS request redirections.
 
 //set up the necessary libraries
 var express = require('express');
-var fs = require('fs');
 var router = express.Router();
 
 /* set up GET route for default/Home page. */
