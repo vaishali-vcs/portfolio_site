@@ -1,6 +1,5 @@
-#!/usr/bin/env node
-
-/**
+/** This js file launches the nodejs server on the default port-3000
+ * 
  * Module dependencies.
  */
 

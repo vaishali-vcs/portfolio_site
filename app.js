@@ -1,3 +1,7 @@
+/** Module to set up the routes and 
+ * paths to node_modules and public folders.
+*/
+
 //installed 3rd party packages
 let createError = require('http-errors');
 let express = require('express');
@@ -6,6 +10,7 @@ let cookieParser = require('cookie-parser');
 let bodyParser = require("body-parser");
 let logger = require('morgan');
 
+// link the path to the index router.
 let indexRouter = require('./routes/index');
 
 let app = express();
@@ -24,6 +29,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+//Use index router and body parser
 app.use(bodyParser.json());
 app.use('/', indexRouter);
 
